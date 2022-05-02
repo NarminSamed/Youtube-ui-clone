@@ -1,0 +1,247 @@
+*, *::before, *::after {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    height: 56px;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.logo {
+    width: 90px;
+    height: 20px;
+    margin-left: 20px;
+}
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.nav-left {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-left img {
+    cursor: pointer;
+}
+img,
+.sidebar-profile {
+    width: 24px;
+    height: 24px;
+}
+.channel-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.search-bar {
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    border:1px solid #ccc;
+    margin: 0 7px 0 8px;
+}
+.search-input {
+    width:500px;
+    height: 100%;
+    padding: 10px;
+    border-right: none;
+    border-radius: 0;
+    border: none;
+}
+.search-btn {
+    height: 100%;
+    border: none;
+    padding: 0 18px;
+    border-left: none;
+    cursor: pointer;
+}
+.categories {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; 
+    display: flex;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    left: 240px;
+    background-color: #fff;
+}
+.category {
+    margin: 12px 12px 12px 0;
+    font-size: 14px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 1.4rem;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #E5E5E5;
+    display: inline-flex;
+    align-items: center;
+    line-height: 2rem;
+    letter-spacing: .2px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.category:first-child {
+    margin-left: 20px;
+}
+.sidebar-categories:last-child {
+    border: none;
+}
+.active {
+    background-color: #000;
+    color: #fff;
+    border: transparent;
+}
+.sidebar {
+   height: calc(100vh - 50px);
+   width: 240px;
+   position: fixed;
+   top: 56px;
+   left: 0;
+   bottom: 0;
+   padding: 12px 0;
+   overflow-y: scroll;
+   background-color: white;
+   
+}
+.sidebar-categories {
+   padding: 12px 0px;
+   border-bottom: 1px solid #ccc;
+}
+.sidebar-category {
+    display: flex;
+    color: #333;
+    align-items: center;
+    font-size: 14px;
+    padding: 6px 25px;
+    height: 40px;
+    cursor: pointer;
+}
+.sidebar-category img {
+    margin-right: 8px;
+}
+.sidebar-category span {
+    margin-left: 15px;
+}
+.sidebar-categories h3 {
+    color: #606060;
+    padding: 8px 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.sidebar-category:hover{
+    background-color: #E5E5E5;
+}
+.sidebar-profile {
+    border-radius: 50%;
+}
+.link-selected {
+    background-color: #D7D7D7;
+}
+.sidebar-categories:last-child {
+    padding: 16px 24px 0 24px;
+}
+.sidebar-categories p {
+    padding: 24px 0;
+    font-size: 13px;
+    color: #606060;
+}
+.footer-links {
+    font-size: 13px;
+    color: #606060;
+    font-weight: 500;
+    margin-right: 8px;
+}
+.links-primary,
+.links-secondary {
+    padding-top: 12px;
+}
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 130px;
+    left: 260px;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.thumbnail-img {
+    width: 296px;
+    height: 163px;
+}
+.videos {
+    z-index: -1;
+    position: relative;
+    background-color: #f9f9f9;
+}
+.thumbnail {
+    position: relative;
+}
+.thumbnail::before {
+    content: attr(data-duration);
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    border-radius: .3rem;
+    padding: .1rem .3rem;
+}
+.video-bottom-section {
+    display: flex;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.video-bottom p {
+    color: #606060;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.video-channel-name {
+    display: flex;
+    align-items: center;
+    color: #606060;
+    margin: 5px 0;
+}
+.video-title {
+    color: #030303;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.channel-profil {
+    width: 36px;
+    height: 36px;
+    margin: 8px 10px 0 10px;
+    border-radius: 50%;
+}
+.video-channel-name img {
+    width: 14px;
+    height: 14px;
+    color: #606060;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
